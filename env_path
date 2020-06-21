@@ -1,0 +1,45 @@
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home
+export SPARK_HOME=/usr/local/Cellar/apache-spark/3.0.0
+export SCALA_HOME=/usr/local/opt/scala/idea
+export PATH=$JAVA_HOME/bin:$SPARK_HOME:$SPARK_HOME/bin:$SPARK_HOME/sbin:$PATH
+
+/usr/local/Cellar/apache-spark/
+/usr/local/Cellar/apache-spark/3.0.0
+/usr/local/Cellar/openjdk@11/11.0.7+1
+
+Yifans-MacBook-Pro-2:~ feiyifan$ brew info apache-spark
+apache-spark: stable 3.0.0, HEAD
+Engine for large-scale data processing
+https://spark.apache.org/
+/usr/local/Cellar/apache-spark/3.0.0 (1,191 files, 237.8MB) *
+  Built from source on 2020-06-20 at 12:13:36
+From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/apache-spark.rb
+==> Dependencies
+Required: openjdk@11 ✔
+==> Options
+--HEAD
+	Install HEAD version
+==> Analytics
+install: 5,525 (30 days), 15,547 (90 days), 62,958 (365 days)
+install-on-request: 5,383 (30 days), 15,273 (90 days), 61,508 (365 days)
+build-error: 0 (30 days)
+
+Yifans-MacBook-Pro-2:~ feiyifan$ which spark-shell
+/usr/local/bin/spark-shell
+
+Yifans-MacBook-Pro-2:~ feiyifan$ brew info scala
+scala: stable 2.13.2
+JVM-based programming language
+https://www.scala-lang.org/
+Not installed
+From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/scala.rb
+==> Dependencies
+Required: openjdk ✘
+==> Caveats
+To use with IntelliJ, set the Scala home to:
+  /usr/local/opt/scala/idea
+==> Analytics
+install: 8,671 (30 days), 32,684 (90 days), 128,327 (365 days)
+install-on-request: 8,189 (30 days), 30,369 (90 days), 119,152 (365 days)
+build-error: 0 (30 days)
+
